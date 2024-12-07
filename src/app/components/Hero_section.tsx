@@ -4,7 +4,6 @@ import Sparkle from "./Sparkle";
 function Hero_section() {
     return (
         <div className="relative">
-            {/* Sparkle component as background */}
             <Sparkle
                 id="particles"
                 className="custom-particles absolute top-0 left-0 w-full h-full"
@@ -27,7 +26,6 @@ function Hero_section() {
                 </p>
             </div>
 
-            {/* Add the typing animation CSS */}
             <style jsx>{`
                 @keyframes typing {
                     from {

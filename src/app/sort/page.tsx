@@ -61,6 +61,9 @@ const UploadSamples = () => {
                 >
                     Sort
                 </button>
+                <button className="px-4 py-2 font-semibold rounded border border-black text-black bg-transparent dark:border-white dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition">
+                    Download
+                </button>
             </div>
         </div>
     );
