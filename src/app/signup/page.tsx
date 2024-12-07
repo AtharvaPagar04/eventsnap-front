@@ -14,7 +14,6 @@ const SignupForm = () => {
         router.push("/login");
     };
 
-    // Tailwind-based classes for dynamic theming
     const containerClass = `bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white`;
     const inputClass = `w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-500 
         dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-400 
@@ -25,16 +24,22 @@ const SignupForm = () => {
         from-blue-500 to-green-500 text-black`;
 
     return (
-        <div className={`flex justify-center items-center h-screen ${containerClass}`}>
+        <div
+            className={`flex justify-center items-center h-screen ${containerClass}`}
+        >
             <div className="w-full max-w-md px-6 py-4 rounded-lg shadow-md border-2 border-opacity-50">
-                <h1 className="text-2xl font-semibold mb-2">Create an Account</h1>
+                <h1 className="text-2xl font-semibold mb-2">
+                    Create an Account
+                </h1>
                 <p className="mb-6 text-gray-500 dark:text-gray-400">
                     Enter your information to sign up
                 </p>
                 <form className="space-y-2" onSubmit={handleClick1}>
-                    {/* Full Name */}
                     <div className="text-left py-2">
-                        <label htmlFor="full-name" className="block font-medium mb-1">
+                        <label
+                            htmlFor="full-name"
+                            className="block font-medium mb-1"
+                        >
                             Full Name
                         </label>
                         <input
@@ -44,9 +49,11 @@ const SignupForm = () => {
                             className={inputClass}
                         />
                     </div>
-                    {/* Username */}
                     <div className="text-left">
-                        <label htmlFor="username" className="block font-medium mb-1">
+                        <label
+                            htmlFor="username"
+                            className="block font-medium mb-1"
+                        >
                             Username
                         </label>
                         <input
@@ -56,9 +63,11 @@ const SignupForm = () => {
                             className={inputClass}
                         />
                     </div>
-                    {/* Email */}
                     <div className="text-left">
-                        <label htmlFor="email" className="block font-medium mb-1">
+                        <label
+                            htmlFor="email"
+                            className="block font-medium mb-1"
+                        >
                             Email
                         </label>
                         <input
@@ -68,9 +77,11 @@ const SignupForm = () => {
                             className={inputClass}
                         />
                     </div>
-                    {/* Phone Number */}
                     <div className="text-left">
-                        <label htmlFor="phone-number" className="block font-medium mb-1">
+                        <label
+                            htmlFor="phone-number"
+                            className="block font-medium mb-1"
+                        >
                             Phone Number
                         </label>
                         <input
@@ -80,9 +91,11 @@ const SignupForm = () => {
                             className={inputClass}
                         />
                     </div>
-                    {/* Password */}
                     <div className="text-left">
-                        <label htmlFor="password" className="block font-medium mb-1">
+                        <label
+                            htmlFor="password"
+                            className="block font-medium mb-1"
+                        >
                             Password
                         </label>
                         <input
@@ -92,15 +105,13 @@ const SignupForm = () => {
                             className={inputClass}
                         />
                     </div>
-                    {/* Note */}
                     <p className="text-left text-sm text-gray-500 dark:text-gray-400">
-                        Must be at least 8 characters, including a number and a special character.
+                        Must be at least 8 characters, including a number and a
+                        special character.
                     </p>
-                    {/* Submit Button */}
                     <button className={buttonClass}>Sign Up</button>
                 </form>
 
-                {/* Footer */}
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                     Already a member?{" "}
                     <span

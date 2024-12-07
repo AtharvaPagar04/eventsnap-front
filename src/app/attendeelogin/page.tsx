@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 const EventLogin = () => {
     const router = useRouter();
 
-    // Tailwind-based dynamic classes for theme styling
     const containerClass = `bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white`;
     const cardClass = `rounded-lg p-8 w-11/12 max-w-lg shadow-lg border-2 border-opacity-50 
         bg-white text-black border-gray-300 
@@ -20,7 +19,6 @@ const EventLogin = () => {
             className={`absolute inset-0 flex flex-col items-center justify-center ${containerClass}`}
         >
             <div className={cardClass}>
-                {/* Login Button */}
                 <button
                     className={buttonClass}
                     onClick={() => router.push("/sort")}

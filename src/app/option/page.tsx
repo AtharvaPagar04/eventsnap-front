@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 const TwoButtonComponent = () => {
     const router = useRouter();
 
-    // Tailwind-based classes for dynamic theming
     const containerClass = `bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white`;
     const buttonClass = `
         py-2 w-full mb-4 font-semibold rounded shadow-md hover:opacity-90 
@@ -15,11 +14,12 @@ const TwoButtonComponent = () => {
     `;
 
     return (
-        <div className={`flex flex-col justify-center items-center min-h-screen ${containerClass}`}>
+        <div
+            className={`flex flex-col justify-center items-center min-h-screen ${containerClass}`}
+        >
             <div className="w-full max-w-sm p-6 rounded-lg border-2 border-opacity-50 text-center">
                 <h1 className="mb-4 text-xl font-bold">Sign Up</h1>
 
-                {/* Organizer Button */}
                 <button
                     className={buttonClass}
                     onClick={() => router.push("/login")}
@@ -27,7 +27,6 @@ const TwoButtonComponent = () => {
                     Signup as Organizer
                 </button>
 
-                {/* Attendee Button */}
                 <button
                     className={buttonClass}
                     onClick={() => router.push("/attendeelogin")}

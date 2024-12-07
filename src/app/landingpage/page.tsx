@@ -3,7 +3,6 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import DarkThemeCard from "../components/card";
 import Hero_section from "../components/Hero_section";
-import Sparkle from "../components/Sparkle";
 const LandingPage = () => {
     const router = useRouter();
 
@@ -13,7 +12,6 @@ const LandingPage = () => {
 
     return (
         <div className="bg-gray-100 dark:bg-black text-black dark:text-white">
-            {/* Hero Section */}
             <div className="min-h-screen flex flex-col items-center justify-center text-center space-y-6 px-4 max-w-4xl mx-auto">
                 <div className="bg-[url('../images/baground.jpg')] bg-cover bg- h-[70vh] w-[95vw]  border-xl rounded-3xl filter blur-s">
                     <div className=" mt-40">
@@ -29,14 +27,11 @@ const LandingPage = () => {
                     </div>
                 </div>
             </div>
-            {/* Features Section */}
             <div>
                 <div className="h-[100vh] flex flex-col items-center justify-center">
                     <div className="relative h-[70vh] w-[95vw] border-xl rounded-3xl overflow-hidden">
-                        {/* Background image with blur effect */}
                         <div className="absolute inset-0 bg-[url('../images/background2.jpg')] bg-center bg-cover filter blur-sm z-0"></div>
 
-                        {/* Content section */}
                         <div className="relative z-10 h-full flex flex-col items-center justify-center p-4">
                             <p className="text-6xl font-serif font-bold text-gray-900 dark:text-white mt-10">
                                 Features

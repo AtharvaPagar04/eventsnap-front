@@ -16,12 +16,10 @@ const LoginPage = () => {
     return (
         <div className="flex justify-center items-center h-screen bg-gray-100 dark:bg-gray-900">
             <div className="w-full max-w-sm bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center border border-gray-300 dark:border-gray-600">
-                {/* Heading */}
                 <h1 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
                     Sign In.
                 </h1>
 
-                {/* Email Input */}
                 <div className="text-left mb-4">
                     <label
                         htmlFor="email"
@@ -37,7 +35,6 @@ const LoginPage = () => {
                     />
                 </div>
 
-                {/* Password Input */}
                 <div className="text-left mb-4">
                     <label
                         htmlFor="password"
@@ -53,7 +50,6 @@ const LoginPage = () => {
                     />
                 </div>
 
-                {/* Sign-In Button */}
                 <button
                     className="w-full py-2 mb-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded hover:opacity-90"
                     onClick={handleSignUpClick2}
@@ -61,7 +57,6 @@ const LoginPage = () => {
                     Sign In.
                 </button>
 
-                {/* Footer Links */}
                 <p className="text-gray-500 dark:text-gray-400 text-sm">
                     Don't have an account?{" "}
                     <span

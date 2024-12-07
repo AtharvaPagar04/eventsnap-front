@@ -5,12 +5,10 @@ function CreateAlbum() {
     return (
         <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
             <div className="flex flex-col items-center space-y-4 rounded-lg p-6 w-10/12 max-w-md shadow-lg border-2 border-gray-300 dark:border-white/50">
-                {/* Title: Create an Album */}
                 <h1 className="text-xl font-bold text-gray-800 dark:text-white">
                     Create an Album
                 </h1>
 
-                {/* Input: Album Name */}
                 <div className="w-full">
                     <input
                         id="albumName"
@@ -20,7 +18,6 @@ function CreateAlbum() {
                     />
                 </div>
 
-                {/* Field: Generate a Code */}
                 <div className="w-full flex flex-col space-y-2">
                     <div className="flex items-center space-x-2 w-full border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-2 bg-white dark:bg-gray-700">
                         <input
@@ -40,12 +37,10 @@ function CreateAlbum() {
                     </button>
                 </div>
 
-                {/* Title: Upload Photos */}
                 <h1 className="text-xl font-bold pt-5 text-gray-800 dark:text-white">
                     Upload Event Photos
                 </h1>
 
-                {/* Folder Selector */}
                 <div className="w-full">
                     <input
                         id="folderSelector"
@@ -54,7 +49,6 @@ function CreateAlbum() {
                     />
                 </div>
 
-                {/* Submit Button */}
                 <button className="w-full py-2 mb-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded hover:opacity-90">
                     Submit
                 </button>
