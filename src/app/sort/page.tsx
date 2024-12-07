@@ -53,7 +53,7 @@ const UploadSamples = () => {
                 />
 
                 <h2 className="text-lg font-semibold text-center text-black dark:text-white">
-                    Sort Personalized Photos
+                    Sort Personalized Photo
                 </h2>
                 <button
                     className="px-4 py-2 font-semibold rounded border border-black text-black bg-transparent dark:border-white dark:text-white hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition"
